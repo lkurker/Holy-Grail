@@ -119,41 +119,42 @@
 
 <body>
 
-    <header>
-        <h1>
-            Running as a Hobby
-        </h1>
-    </header>
+    <header><p>The header has static positioning, so it will default to the top of the page.</p></header>
 
-    <nav></nav>
+    <nav><p>The position for the nav is fixed so it will stay where it is no matter what the user does.</p></nav>
 
     <div>
 
         <div class="articles">
 
             <article>
-                <h2>Why I do it</h2>
-                <p>For high school, I had to move to a new city where I didn't know anyone. In order to make friends
-                    and feel involved at school, I joined the cross country team. It was hard work at first, since at the time
-                    I wasn't in very good shape, but after four years I came to love it and it's something I continue to do this day.
+                <p>
+                    The article is placed where it is because it is located within the div that has class "articles". Class "articles" has a relative positioning,
+                    so these articles are placed relative to the nav as a whole.
                 </p>
             </article>
 
             <article>
-                <h2>The benefits of Running</h2>
-                <p>I won't claim to be some fitness trainer that can explain exactly why you should you run, but I can 
-                   tell you what I've seen as helpful for me. Firstly, it helps me keep in shape. I feel physically good and 
-                   it helps me with my job. It also helps with my mental health, and I often run before I know I need to focus for a while. 
-                </canvas></canvas></p>
+                
+                <p>Same as before, except this time it is lower since articles are box elements that stack on top of each other.
+               </p>
             </article>
 
         </div>
 
-    <aside></aside>
+    <aside>
+        <p>An aside does not take up a whole row like a box element, so it is able to be positioned on the side of the page.
+            It has absolute positioning, so it is relative to the browser screen.
+        </p>
+    </aside>
 
     </div>
 
-    <footer></footer>
+    <footer>
+        <p>This has fixed positioning, so it's position is fixed to the screen and will not move even
+            if the user scrolls away.
+        </p>
+    </footer>
 
 </body>
 </html>
